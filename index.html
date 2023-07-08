@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debajyoti Roy Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(12, 37, 67);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(46, 46, 110);
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li a:hover {
+            font-size: 1.1rem;
+            color: rgb(152, 152, 246);
+        }
+
+        .left {
+            font-size: 1.75rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.2rem;
+            width: 50%;
+        }
+
+        .rightSection {
+            width: 50%;
+        }
+
+        .rightSection img {
+            width: 90%;
+            margin: 50px 0;
+            background-color: transparent;
+        }
+
+        .purple {
+            color: rgb(75, 203, 242);
+        }
+        #element{
+            color: rgb(75, 203, 242);
+        }
+        .secondSection h1{
+            font-size: 1.8rem;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection.box{
+            background: white;
+            width: 80vw;
+            height: 2.5px;
+            margin: 56px 0;
+            /* display: flex; */
+        }
+        .secondSection.vertical{
+            background-color: white;
+            height: 80px;
+            width: 2px;
+            margin: 0 100px
+        }
+        .image-top{
+            width: 20%;
+        }
+        .vertical-title{
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Debajyoti Roy Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">My Works</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, my name is <span class="purple">Debajyoti.</span>
+                <div>Welcome to my Portfolio Website.</div>
+                <div>I am a Professional</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Image 3.png" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <hr>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="https://logodownload.org/wp-content/uploads/2019/10/pwc-logo-0.png" alt="">
+                    <div class="vertical-text">
+                        Technology Consultant 2023-2025
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa accusantium possimus beatae nam! Totam repellendus ea est numquam commodi cumque! Quod vitae ut quibusdam, commodi officiis nesciunt voluptatibus? Eum, veritatis?
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data <i>Engineer</i>.', 'Data <i>Scientist.</i>','Data <i>Analyst.</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
