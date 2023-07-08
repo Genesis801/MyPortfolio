@@ -9,161 +9,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,400&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            background-color: rgb(12, 37, 67);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            background-color: rgb(46, 46, 110);
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav li {
-            list-style: none;
-            margin: 0 25px;
-        }
-
-        nav li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav li a:hover {
-            font-size: 1.1rem;
-            color: rgb(152, 152, 246);
-        }
-
-        .left {
-            font-size: 1.75rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 80px 0;
-            align-items: center;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 2.2rem;
-            width: 50%;
-        }
-
-        .rightSection {
-            width: 50%;
-        }
-
-        .rightSection img {
-            width: 90%;
-            margin: 50px 0;
-            background-color: transparent;
-        }
-
-        .purple {
-            color: rgb(75, 203, 242);
-        }
-        #element{
-            color: rgb(75, 203, 242);
-        }
-        .secondSection h1{
-            font-size: 1.8rem;
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        .secondSection.box{
-            background: white;
-            width: 80vw;
-            height: 2.5px;
-            margin: 56px 0;
-            /* display: flex; */
-        }
-        .secondSection.vertical{
-            background-color: white;
-            height: 80px;
-            width: 2px;
-            margin: 0 100px
-        }
-        .image-top{
-            width: 20%;
-        }
-        .vertical-title{
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Debajyoti Roy Portfolio</div>
-            <div class="right">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">My Works</a></li>
-                    <li><a href="/">Contact me</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact me</a></li>
                 </ul>
+            </nav>
+            <div class="header-text">
+                <p>Data Engineer/Data Scientist</p>
+                <h1>Hi, I'm <span>Debajyoti Roy</span> <br>A passionate Data Professional <br>from India.</h1>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hello, my name is <span class="purple">Debajyoti.</span>
-                <div>Welcome to my Portfolio Website.</div>
-                <div>I am a Professional</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="Image 3.png" alt="">
-            </div>
-        </section>
-        <section class="secondSection">
-            <h1>Work Experience</h1>
-            <hr>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="https://logodownload.org/wp-content/uploads/2019/10/pwc-logo-0.png" alt="">
-                    <div class="vertical-text">
-                        Technology Consultant 2023-2025
+        </div>
+    </div>
+<!-- ----------About Section------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ducimus itaque dolor nobis rem minima, est omnis saepe, libero consectetur asperiores voluptatibus! Ut sapiente maiores necessitatibus asperiores atque dolorum doloremque!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa accusantium possimus beatae nam! Totam repellendus ea est numquam commodi cumque! Quod vitae ut quibusdam, commodi officiis nesciunt voluptatibus? Eum, veritatis?
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Engineering</span><br>Creating End to End Data Pipelines.</li>
+                            <li><span>Data Science</span><br>Building End to End ML Apps using state of the art models.</li>
+                            <li><span>Data Analysis</span><br>Creating Interactive dashboards for live data analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>PwC India</span><br>Worked as a Technology Consultant <i>(2023-Present)</i></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Master's in Engineering (M.E)</span><br>Jadavpur University <i>(July 2023)<br>GPA -9.2/10</i>                           </i></li>
+                            <li><span>Bachelors in Technology (B.Tech)</span><br>Techno International New Town <i>(July 2021)<br>GPA - 8.91/10</i></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
             </div>
-        </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
+        </div>
+    </div>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Data <i>Engineer</i>.', 'Data <i>Scientist.</i>','Data <i>Analyst.</i>'],
-            typeSpeed: 50,
-        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
     </script>
 </body>
 
