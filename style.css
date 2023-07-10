@@ -314,7 +314,7 @@ form btn2{
     color: #ff004f;
 }
 /* ---------Responsiveness CSS----------- */
-nav .fa-regular, .fa-sharp{
+nav .fas{
     display: none;
 }
 @media only screen and (max-width: 600px){
@@ -328,7 +328,7 @@ nav .fa-regular, .fa-sharp{
     .header-text h1{
         font-size: 30px;
     }
-    nav.fa-regular, .fa-sharp{
+    nav .fas{
         display: block;
         font-size: 25px;
     } 
@@ -348,7 +348,7 @@ nav .fa-regular, .fa-sharp{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-regular{
+    nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
